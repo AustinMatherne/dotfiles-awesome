@@ -6,7 +6,7 @@
 theme = {}
 
 --theme.font          = "sans 8"
-theme.font          = "Droid Sans 12"
+theme.font          = "Source Sans Pro 14"
 
 theme.bg_normal     = "#222222"
 --theme.bg_focus      = "#535d6c"
