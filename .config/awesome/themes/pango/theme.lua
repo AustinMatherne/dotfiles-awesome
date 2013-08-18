@@ -6,7 +6,7 @@
 theme = {}
 
 --theme.font          = "sans 8"
-theme.font          = "Source Sans Pro 14"
+theme.font          = "Source Sans Pro 12"
 
 theme.bg_normal     = "#222222"
 --theme.bg_focus      = "#535d6c"
