@@ -517,6 +517,6 @@ awful.util.spawn_with_shell("xcalib -s 2 ~/.color/icc/shimian-3-right-sn207l2syb
 awful.util.spawn_with_shell("dropbox-cli start")
 awful.util.spawn_with_shell("parcellite")
 awful.util.spawn_with_shell("urxvtc")
-awful.util.spawn_with_shell("urxvt -e vim --servername vim")
-awful.util.spawn_with_shell("urxvt -e irssi")
+awful.util.spawn_with_shell("urxvtc -e vim --servername vim")
+awful.util.spawn_with_shell("urxvtc -e irssi")
 awful.util.spawn_with_shell("chromium")
