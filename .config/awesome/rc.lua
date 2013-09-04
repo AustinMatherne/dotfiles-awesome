@@ -513,13 +513,12 @@ client.connect_signal("focus", function(c) c.border_color = beautiful.border_foc
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
 
-awful.util.spawn_with_shell("urxvtd --quiet --opendisplay --fork")
 awful.util.spawn_with_shell("xcalib -s 0 ~/.color/icc/shimian-1-center-sn207l2syb-hw10620.icc")
 awful.util.spawn_with_shell("xcalib -s 1 ~/.color/icc/shimian-2-left-sn208l2syb-doai7026.icc")
 awful.util.spawn_with_shell("xcalib -s 2 ~/.color/icc/shimian-3-right-sn207l2syb-doai7054.icc")
-awful.util.spawn_with_shell("dropbox-cli start")
-awful.util.spawn_with_shell("parcellite")
-awful.util.spawn_with_shell("urxvtc")
+awful.util.spawn_with_shell("urxvtd --quiet --opendisplay --fork && urxvtc")
 awful.util.spawn_with_shell("urxvt -e vim --servername vim")
 awful.util.spawn_with_shell("urxvt -e irssi")
 awful.util.spawn_with_shell("chromium")
+awful.util.spawn_with_shell("parcellite")
+awful.util.spawn_with_shell("dropbox-cli start")
