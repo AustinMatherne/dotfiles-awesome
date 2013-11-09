@@ -426,17 +426,7 @@ awful.rules.rules = {
     { rule = { name = "mplayer2" },
       properties = { tag = tags[3][1],
                            size_hints_honor = false,
-                           floating = false } },
-    { rule = { class = "Darktable" },
-      properties = { tag = tags[1][1],
-                           size_hints_honor = false,
-                           floating = false } },
-    { rule = { class = "Dev-darktable" },
-      properties = { tag = tags[1][1],
-                           size_hints_honor = false,
-                           floating = false } },
-    { rule_any = { role = { "gimp-toolbox", "gimp-dock" } },
-      properties = { tag = tags[3][1] } }
+                           floating = false } }
     --{ rule = { class = "MPlayer" },
       --properties = { floating = true } },
     --{ rule = { class = "pinentry" },
