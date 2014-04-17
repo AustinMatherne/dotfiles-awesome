@@ -36,7 +36,8 @@ theme.border_marked = "#202020"
 -- There are other variable sets
 -- overriding the default one when
 -- defined, the sets are:
--- [taglist|tasklist]_[bg|fg]_[focus|urgent]
+-- taglist_[bg|fg]_[focus|urgent|occupied|empty]
+-- tasklist_[bg|fg]_[focus|urgent]
 -- titlebar_[bg|fg]_[normal|focus]
 -- tooltip_[font|opacity|fg_color|bg_color|border_width|border_color]
 -- mouse_finder_[color|timeout|animate_timeout|radius|factor]
