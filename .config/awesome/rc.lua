@@ -440,7 +440,7 @@ awful.rules.rules = {
     { rule = { name = "irssi" },
       properties = { tag = tags[3][1],
                            floating = false } },
-    { rule = { name = "mplayer2" },
+    { rule = { class = "mpv" },
       properties = { tag = tags[3][1],
                            floating = false } }
     --{ rule = { class = "MPlayer" },
