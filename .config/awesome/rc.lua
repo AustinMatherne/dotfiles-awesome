@@ -534,7 +534,7 @@ if not xresources:match(xresources_name) then
     awful.util.spawn_with_shell("xcalib -s 0 ~/.color/icc/shimian-1-center-sn207l2syb-hw10620.icc")
     awful.util.spawn_with_shell("xcalib -s 1 ~/.color/icc/shimian-2-left-sn208l2syb-doai7026.icc")
     awful.util.spawn_with_shell("xcalib -s 2 ~/.color/icc/shimian-3-right-sn207l2syb-doai7054.icc")
-    awful.util.spawn_with_shell("urxvtd --quiet --opendisplay --fork && ~/bin/mux && urxvtc -e tmux attach-session -t vim && urxvtc -e tmux attach-session -t zsh && urxvtc -name irssi -e tmux attach-session -t irssi")
+    awful.util.spawn_with_shell("urxvtd --quiet --opendisplay --fork && mux && urxvtc -name vim -e tmux attach-session -t vim && urxvtc -e tmux attach-session -t zsh && urxvtc -name irssi -e tmux attach-session -t irssi")
     awful.util.spawn_with_shell("chromium")
     awful.util.spawn_with_shell("parcellite")
     awful.util.spawn_with_shell("dropbox-cli start")
