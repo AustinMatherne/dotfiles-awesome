@@ -47,7 +47,7 @@ beautiful.init("/home/austinmatherne/.config/awesome/themes/pango/theme.lua")
 --terminal = "xterm"
 terminal = "urxvtc"
 --editor = os.getenv("EDITOR") or "nano"
-editor = os.getenv("EDITOR") or "vim --remote"
+editor = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
 
 -- Default modkey.
