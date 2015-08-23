@@ -539,7 +539,6 @@ if not xresources:match(xresources_name) then
     awful.util.spawn_with_shell("parcellite")
     awful.util.spawn_with_shell("clip-get")
     awful.util.spawn_with_shell("clip-set")
-    awful.util.spawn_with_shell("dropbox-cli start")
     awful.util.spawn_with_shell("xrdb -merge <<< " .. "'" .. xresources_name .. ": true'")
 end
 
