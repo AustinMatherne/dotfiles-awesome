@@ -416,7 +416,7 @@ awful.rules.rules = {
                      buttons = clientbuttons } },
     { rule_any = { class = { "chromium-browser-chromium", "Google-chrome-stable", "Google-chrome-beta", "Google-chrome-unstable", "Firefox", "Opera" } },
       properties = { tag = tags[1][1] } },
-    { rule_any = { class = { "Chromium-browser-chromium", "Google-chrome-stable", "Google-chrome-beta", "Google-chrome-unstable", "Firefox", "Opera" } },
+    { rule_any = { class = { "chromium-browser-chromium", "Google-chrome-stable", "Google-chrome-beta", "Google-chrome-unstable", "Firefox", "Opera" } },
       except_any = { role = { "pop-up", "GtkFileChooserDialog" } },
       properties = { floating = false } },
     { rule = { role = "pop-up" },
