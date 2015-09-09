@@ -141,7 +141,7 @@ netwidget = wibox.widget.textbox()
 vicious.register(volwidget, vicious.widgets.volume, " Volume: $1% $2", 1, "Master")
 vicious.register(cpuwidget, vicious.widgets.cpu, "| CPU: $1%", 1)
 vicious.register(memwidget, vicious.widgets.mem, "| Memory: $1%", 1)
-vicious.register(netwidget, vicious.widgets.net, "| Down: ${eth0 down_kb}kb | Up: ${eth0 up_kb}kb |")
+vicious.register(netwidget, vicious.widgets.net, "| Down: ${enp5s0 down_kb}kb | Up: ${enp5s0 up_kb}kb |")
 
 -- Create a wibox for each screen and add it
 mywibox = {}
