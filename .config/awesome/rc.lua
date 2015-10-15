@@ -534,6 +534,7 @@ if not xresources:match(xresources_name) then
     awful.util.spawn_with_shell("urxvtd --quiet --opendisplay --fork && mux && urxvtc -name vim -e tmux attach-session -t vim && urxvtc -e tmux attach-session -t austinmatherne && urxvtc -name irssi -e tmux attach-session -t irssi")
     awful.util.spawn_with_shell("chromium")
     awful.util.spawn_with_shell("parcellite")
+    awful.util.spawn_with_shell("dropbox start")
     awful.util.spawn_with_shell("clip-get")
     awful.util.spawn_with_shell("clip-set")
     awful.util.spawn_with_shell("xrdb -merge <<< " .. "'" .. xresources_name .. ": true'")
