@@ -430,6 +430,9 @@ awful.rules.rules = {
       except_any = { role = { "pop-up", "GtkFileChooserDialog" },
                      instance = { "Dialog" } },
       properties = { floating = false } },
+    { rule = { role = "app" },
+      properties = { tag = tags[3][1],
+                           floating = false } },
     { rule = { role = "pop-up" },
       properties = { tag = tags[3][1],
                            floating = false } },
@@ -544,6 +547,7 @@ if not xresources:match(xresources_name) then
     awful.util.spawn_with_shell("xcalib -s 2 ~/.color/icc/shimian-3-right-sn207l2syb-doai7054.icc")
     awful.util.spawn_with_shell("urxvtd --quiet --opendisplay --fork && mux && urxvtc -name vim -e tmux attach-session -t vim && urxvtc -e tmux attach-session -t austinmatherne && urxvtc -name irssi -e tmux attach-session -t irssi")
     awful.util.spawn_with_shell("chromium")
+    awful.util.spawn_with_shell("signal")
     awful.util.spawn_with_shell("parcellite")
     awful.util.spawn_with_shell("dropbox start")
     awful.util.spawn_with_shell("clip-get")
