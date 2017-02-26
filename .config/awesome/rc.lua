@@ -639,16 +639,7 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 local xresources_name = "awesome.started"
 awful.spawn.easy_async("xrdb -query", function(xresources, stderr, reason, exit_code)
   if not xresources:match(xresources_name) then
-    awful.spawn("xcalib -s 0 ~/.color/icc/shimian-1-center-sn207l2syb-hw10620.icc")
-    awful.spawn("xcalib -s 1 ~/.color/icc/shimian-2-left-sn208l2syb-doai7026.icc")
-    awful.spawn("xcalib -s 2 ~/.color/icc/shimian-3-right-sn207l2syb-doai7054.icc")
-    awful.spawn("mux")
-    awful.spawn("terms")
-    awful.spawn("chromium")
-    awful.spawn("parcellite")
-    awful.spawn("dropbox start")
-    awful.spawn("clip-get")
-    awful.spawn("clip-set")
+    awful.spawn.with_shell("~/.xinitrc")
     awful.spawn.with_shell("xrdb -merge <<< '" .. xresources_name .. ": true'")
   end
 end)
