@@ -524,8 +524,6 @@ awful.rules.rules = {
       properties = { screen = 3, floating = false } },
     { rule = { class = "URxvt" },
       properties = { screen = 2, floating = false } },
-    { rule = { class = "URxvt", instance = "mitmproxy" },
-      properties = { screen = 3, floating = false } },
     { rule = { class = "URxvt", instance = "irssi" },
       properties = { screen = 3, floating = false } },
     { rule = { class = "mpv" },
